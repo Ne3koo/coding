@@ -54,4 +54,16 @@ header {
     margin-right: 0;
     margin-bottom: 5px;
   }
+  
+  /* Améliorations d'accessibilité */
+  .logo img,
+  .navigation li,
+  .search-bar input[type="text"] {
+    outline: none;
+  }
+  
+  .navigation li:focus,
+  .search-bar input[type="text"]:focus {
+    outline: 2px solid #000;
+  }
 }

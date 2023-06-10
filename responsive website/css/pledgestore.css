@@ -51,4 +51,17 @@ header {
   .ship-list {
     grid-template-columns: 1fr;
   }
+  
+  /* Améliorations d'accessibilité */
+  .ship-item,
+  .ship-item h3,
+  .ship-item p {
+    outline: none;
+  }
+  
+  .ship-item:focus,
+  .ship-item h3:focus,
+  .ship-item p:focus {
+    outline: 2px solid #000;
+  }
 }

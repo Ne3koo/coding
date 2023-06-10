@@ -71,13 +71,39 @@ header {
   .ship-details {
     grid-template-columns: 1fr;
   }
-  
+
   .purchase-form {
     margin-top: 10px;
   }
-  
+
   .form-button {
     display: block;
     width: 100%;
+  }
+  
+  /* Améliorations d'accessibilité */
+  .form-row {
+    position: relative;
+  }
+  
+  .form-row::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .form-row:focus-within::after {
+    transform: scaleX(1);
+  }
+  
+  .form-label {
+    cursor: pointer;
   }
 }

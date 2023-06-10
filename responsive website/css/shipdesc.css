@@ -50,4 +50,17 @@ header {
   .ship-details {
     grid-template-columns: 1fr;
   }
+  
+  /* Améliorations d'accessibilité */
+  .ship-info,
+  .ship-info h1,
+  .ship-info p {
+    outline: none;
+  }
+  
+  .ship-info:focus,
+  .ship-info h1:focus,
+  .ship-info p:focus {
+    outline: 2px solid #000;
+  }
 }
